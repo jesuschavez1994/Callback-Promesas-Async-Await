@@ -24,11 +24,14 @@ export const buscarHeroesAsync = async(id) =>{
     const heroe = heroes[id];
 
  
-    if(heroe){
-        return heroe
-    }else{
-        throw `No se encontró el héroe con el ${ id }`
-    }
+    // if(heroe){
+    //     return heroe
+    // }else{
+    //     throw `No se encontró el héroe con el ${ id }`
+    // }
+
+    /* Expresión ternaria */
+    (heroe) ? heroe : function(){throw `No se encontró el héroe con el ${ id }`}();
   
    
 }

@@ -36,7 +36,7 @@ Promise.all([ buscarHeroes(heroesId), buscarHeroes(heroesId2)  ])
 */
 
 buscarHeroesWidthPromises('spider').then(heroe => console.table(heroe));
-buscarHeroesAsync('iron').then(console.table);
+buscarHeroesAsync('iron2').then(console.table);
 
 /*
     await
